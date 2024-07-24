@@ -90,4 +90,3 @@ To add a new threat intelligence platform, create a new connector in the `connec
 ![Screenshot 1](documentation/screenshots/Screenshot1.png)
 ![Screenshot 2](documentation/screenshots/Screenshot2.png)
 ![Screenshot 3](documentation/screenshots/Screenshot3.png)
-```
