@@ -7,7 +7,7 @@ Network Intelligence is a Python application that gathers network connection inf
 Clone the repository:
 
 ```sh
-git clone https://github.com/yourusername/network-intelligence.git
+git clone https://github.com/bovf/network-intelligence.git
 cd network-intelligence
 ```
 
