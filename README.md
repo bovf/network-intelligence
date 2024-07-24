@@ -16,7 +16,33 @@ Install the package:
 ```sh
 pip install .
 ```
+## Adding to PATH
 
+### On Linux and MacOS
+
+1. Create a symlink:
+   ```sh
+   sudo ln -s /path/to/venv/bin/network-intelligence /usr/local/bin/network-intelligence
+   ```
+
+2. Verify the symlink:
+   ```sh
+   network-intelligence --help
+   ```
+
+### On Windows
+
+1. Add the directory containing `network-intelligence` to the system PATH:
+   - Open the Start Search, type in "env", and select "Edit the system environment variables".
+   - In the System Properties window, click on the "Environment Variables" button.
+   - In the Environment Variables window, scroll down to the "System variables" section, select the "Path" variable, and click "Edit".
+   - Click "New" and add the path to the directory containing `network-intelligence`. For example, `C:\path\to\venv\Scripts`.
+   - Click "OK" to close all the windows.
+
+2. Verify the PATH update by opening a new Command Prompt and running:
+   ```sh
+   network-intelligence --help
+   ```
 ## Configuration
 
 ### Obtain an API Key
