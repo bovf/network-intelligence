@@ -56,6 +56,31 @@ For connections from a log file:
 network-intelligence --source log --logfile path/to/network_logs.txt
 ```
 
+To display the help message:
+```sh
+network-intelligence --help
+```
+
+### Additional Options
+
+- To save the results to a file, use the `--output` option:
+
+    ```sh
+    network-intelligence --source active --output results.json
+    ```
+
+- To display detailed reports, use the `--detailed` option:
+
+    ```sh
+    network-intelligence --source active --detailed
+    ```
+
+- Both options can be combined:
+
+    ```sh
+    network-intelligence --source active --output results.json --detailed
+    ```
+
 ## Extending
 
 To add a new threat intelligence platform, create a new connector in the `connectors` directory by extending the `BaseConnector` class and implementing the `check_ip` method.
@@ -65,12 +90,4 @@ To add a new threat intelligence platform, create a new connector in the `connec
 ![Screenshot 1](documentation/screenshots/Screenshot1.png)
 ![Screenshot 2](documentation/screenshots/Screenshot2.png)
 ![Screenshot 3](documentation/screenshots/Screenshot3.png)
-
-3. **Add the encoded API key to `config.yaml`:**
-   - Open `config.yaml` in a text editor.
-   - Replace `YOUR_BASE64_ENCODED_API_KEY` with the base64 encoded string you just generated.
-
-   ```yaml
-   # config.yaml
-   api_key: "MTIzNDU2Nzg5YWJjZGVm"
-   ```
+```
